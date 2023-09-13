@@ -58,7 +58,6 @@ int main()
             loopMenu = true;
 
             system("clear");
-
             std::cout << "\n==============================================";
             std::cout << "\nKeluar Permainan!" << std::endl;
             std::cout << "Permainan Berakhir!" << std::endl;
@@ -67,7 +66,6 @@ int main()
         else
         {
             system("clear");
-
             std::cout << "\n==============================================";
             std::cout << "\nPilihan tidak tersedia!" << std::endl;
             std::cout << "\nTekan untuk melanjutkan . . ." << std::endl;
@@ -234,15 +232,12 @@ void rolling(std::string pertama, std::string kedua)
         if (ronde == 2)
         {
             kondisiRonde = true;
-
             hasil(hasil1, hasil2, pertama, kedua);
-
             break;
         }
 
         else if (ronde <= 2)
         {
-
             do
             {
                 kondisiRonde = true;
@@ -253,18 +248,14 @@ void rolling(std::string pertama, std::string kedua)
 
                 if (pilihRonde == 'y' || pilihRonde == 'Y')
                 {
-
                     ronde++;
-
                     kondisiRonde = true;
                 }
 
                 else if (pilihRonde == 't' || pilihRonde == 'T')
                 {
                     kondisiRonde = true;
-
                     hasil(hasil1, hasil2, pertama, kedua);
-
                     ronde = 3;
                 }
 
